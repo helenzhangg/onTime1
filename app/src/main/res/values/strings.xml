@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">onTimeApp</string>
+    <string name="time_left">Your bus is leaving in</string>
+</resources>

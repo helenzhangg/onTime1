@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrow"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="26dp"
+        android:id="@+id/imageButton"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorText"
+        android:textSize="27dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:text="Set your default bus stops"/>
+
+    <View
+        android:id="@+id/horzLine"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="11dp"
+        android:background="#FFFF" />
+
+    <TextView
+        android:text="57 to Kenmore"
+        android:id="@+id/routeName"
+        android:layout_below="@id/chooseRoute"
+        android:textColor="@color/colorText"
+        android:layout_alignLeft="@id/chooseRoute"
+        android:textSize="27dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Default bus route"
+        android:textSize="27dp"
+        android:textColor="@color/colorTextAccent"
+        android:layout_marginTop="36dp"
+        android:id="@+id/chooseRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horzLine"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title" />
+
+    <TextView
+        android:text="Starting bus stop"
+        android:textSize="27dp"
+        android:textColor="@color/colorTextAccent"
+        android:layout_marginTop="36dp"
+        android:id="@+id/startingStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/routeName"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title" />
+
+    <TextView
+        android:text="57 to Kenmore"
+        android:id="@+id/routeName"
+        android:layout_below="@id/chooseRoute"
+        android:textColor="@color/colorText"
+        android:layout_alignLeft="@id/chooseRoute"
+        android:textSize="27dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Brighton Ave @ Linden St"
+        android:id="@+id/startingName"
+        android:layout_below="@id/startingStop"
+        android:textColor="@color/colorText"
+        android:layout_alignLeft="@id/chooseRoute"
+        android:textSize="27dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pencil"
+        android:background="@color/colorPrimary"
+        android:layout_alignTop="@+id/startingStop"
+        android:layout_toRightOf="@id/startingStop"
+        android:layout_marginStart="25dp"
+        />
+
+    <ImageButton
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pencil"
+        android:layout_marginStart="25dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignTop="@+id/chooseRoute"
+        android:layout_toRightOf="@id/startingStop"/>
+
+    <TextView
+        android:text="Destination stop"
+        android:textSize="27dp"
+        android:textColor="@color/colorTextAccent"
+        android:layout_marginTop="36dp"
+        android:id="@+id/destinationStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startingName"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title" />
+
+    <ImageButton
+        android:id="@+id/edit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pencil"
+        android:background="@color/colorPrimary"
+        android:layout_alignTop="@+id/destinationStop"
+        android:layout_toRightOf="@id/destinationStop"
+        android:layout_marginStart="25dp"
+        />
+
+    <TextView
+        android:text="Commonwealth Ave"
+        android:id="@+id/destinationName"
+        android:layout_below="@id/destinationStop"
+        android:textColor="@color/colorText"
+        android:layout_alignLeft="@id/chooseRoute"
+        android:textSize="27dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorText"
+        android:layout_below="@+id/destinationName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" />
+
+</RelativeLayout>
